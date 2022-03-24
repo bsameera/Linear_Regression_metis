@@ -1,0 +1,120 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red37\green37\blue37;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c19216\c19216\c19216;\cssrgb\c100000\c100000\c100000;}
+\margl1440\margr1440\vieww25400\viewh16000\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b\fs48 \cf0 Project Proposal for Webscraping :
+\f1\b0\fs24 \
+\
+\
+\
+
+\f0\b\fs36 Abstract:
+\f1\b0\fs24 \
+\
+The question behind my analysis is which features affect the ratings of the customers for each hostel.\
+\
+My client is hostel world, which has hostels through out the major cities in different parts of the world. This facility rents hostels and the charges per night stay. \
+\
+The link to the website is - www.hostelworld.com\
+\
+
+\f0\b\fs36 Design : \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs24 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Hostelworld is a leading global Online Travel Agent (OTA) focused on the hostel market.\
+\
+They have hostels all over the world in Europe, Asia, Africa, North America and South America.\
+\
+They have over 20 years' experience, with more than 13 million reviews across more than 17,000 hostels in 179 countries.\
+\
+Their website operates in 19 different languages and our mobile app in 13 languages.\
+\
+There are private rooms which are pricier and shared rooms called dorms.\
+\
+Mostly, the shared rooms are separate for each gender.\
+\
+Some hostels have \
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 The data was taken from many cities all over the world. \
+
+\f0\b\fs36 \
+
+\f1\b0\fs24 \
+\
+
+\f0\b\fs36 Data Description:
+\f1\b0\fs24 \
+\
+The data was acquired using selenium and beautiful soup.\
+\
+The target to be predicted is the overall rating of each hostel, by the customers.\
+\
+The features are 19 in total.\
+\
+All features are categorical, ( values with zeroes and ones ), except for one continuous variable starting_prices ( which is the rent per night in USD ).\
+\
+The features are starting_prices, security, location, staff, atmosphere, cleanliness, value for money rating, free breakfast, free wifi, security lockers, laundry, 24 hour safety, etc. \
+\
+Total number of rows acquired - 1665\
+\
+After data cleaning - 1082\
+\
+
+\f0\b\fs36 \
+Algorithms : 
+\f1\b0\fs24 \
+\
+1. Statsmodel \
+\
+2. Ridge regression\
+\
+2. LassoCV regression\
+\
+The data was divided into three parts using train_test_split function.\
+\
+    train data + validation data = 80 %  ( 60% + 20 % )\
+\
+    test data = 20 %\
+\
+
+\f0\b\fs36 Tools:
+\f1\b0\fs24 \
+\
+1. Request and BeautifulSoup Python libraries to facilitate web scraping.\
+\
+2. Pandas to clean, explore and generate the final data.\
+\
+3. Statsmodels and SKLearn to implement various regression models.\
+\
+4. Matplotlib and seaboard to visualize the data and present final results.\
+\
+5. Python 3.8.5 to accomplish all the above tasks.\
+\
+
+\f0\b\fs36 \
+Communication :\
+\
+Final results are as follows -\
+\
+
+\fs28 R squared < 0.4\
+\
+MAE - 0.39\
+\
+RMSE - 0.5\
+\
+Average predicted rating - 8.86\
+\
+Average actual rating - 8.73\
+\
+
+\f1\b0\fs24 The predicted and actual ratings are almost same, which suggests the model\'92s performance is good.\
+\
+\
+}
